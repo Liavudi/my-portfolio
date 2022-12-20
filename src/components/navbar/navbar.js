@@ -31,6 +31,7 @@ export default function Navbar({ backgroundColor }) {
   return (
     <motion.div
       className="navbar-container"
+      key={'nav-bar'}
       initial={{ x: -300 }}
       animate={{ x: 0 }}
       exit={{ x: -300 }}

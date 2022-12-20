@@ -4,7 +4,7 @@ import YouTube from "react-youtube";
 import "./project.css";
 
 // Reminder TODO: A better implemention of the Project component also Make A projectList Component, Arrange them better and while changing check for the animations
-function StackedProjects() {
+function StackedProjects({skillsRef}) {
   const projectList = require("../../my-projects.json");
   const [clickedProject, setClickedProject] = useState(null);
   const [projectKey, setProjectKey] = useState(null);
@@ -12,7 +12,7 @@ function StackedProjects() {
   return (
     <div className="projects-container">
       <motion.div
-        key="projects-container"
+        key="projects-list"
         className="projects-list"
         initial={{ x: -1000 }}
         animate={{ x: 0 }}
@@ -39,6 +39,9 @@ function StackedProjects() {
             ""
           );
         })}
+        <button className='skills-btn' onClick={() =>
+         skillsRef.current.scrollIntoView({ behavior: "smooth" })
+        }>My Skills</button>
       </motion.div>
       <div className="project-info-motion">
         <Project project={clickedProject} projectKey={projectKey} />

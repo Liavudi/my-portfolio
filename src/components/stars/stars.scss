@@ -148,3 +148,17 @@
 
 }
 }
+
+@media only screen and (min-width: 1900px) {
+
+  .stars {
+    top: -890px;
+    width: 90%;
+    height: 130%;
+  
+  }
+  
+  .star {
+    $star-count: 100;
+  }
+  }

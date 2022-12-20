@@ -3,11 +3,16 @@
     display: flex;
     justify-content: center;
     margin-top: 30px;
+    min-height: 90vh
 }
 
 .projects-list{
     min-width: 180px;
     height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .project-list-title{
@@ -126,11 +131,27 @@
     color: black;
     background-color: white;
 }
-
+.skills-btn{
+    margin-top: 25px;
+    width: 100px;
+    height: 30px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    color: black;
+    box-shadow: 0px 0px 5px 1px white;
+    transition: all 0.25s;
+}
+.skills-btn:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 1px blueviolet;
+    color: white;
+    background-color: blueviolet;
+}
 @media only screen and (max-width: 600px) {
     .projects-container{
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         height: 100%;
     }
@@ -157,6 +178,7 @@
     .project-list-title{
         height: 60px;
         width: 40%;
+        
     }
     
     .project-info-motion{
@@ -183,6 +205,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        flex-direction: row;
     }
     .knowledge-ul{
         margin: auto;
