@@ -71,19 +71,21 @@
 }
 
 .knowledge{
-    margin-left: 30px;
+    margin-left: 100px;
     width: 300px;
     display: flex;
     font-size: 15px;
     letter-spacing: 1px;
     line-height: 1.5em;
-    
-    
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
 }
 .knowledge-title{
     text-align:center;
     border-top-style: solid;
     border-bottom-style: solid;
+    width:200px;    
     
 }
 .project-title{
@@ -105,7 +107,25 @@
 .youtube-container{
     margin: 30px;
 }
-
+.githubLink{
+    margin-top: 8px;
+    border:white solid;
+    border-width: thin;
+    border-radius: 25px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 30px;
+    text-decoration: none;
+    transition: all 0.25s;
+}
+.githubLink:hover{
+    box-shadow: 0 0 10px 2px;
+    color: black;
+    background-color: white;
+}
 
 @media only screen and (max-width: 600px) {
     .projects-container{
@@ -165,7 +185,6 @@
         justify-content: center;
     }
     .knowledge-ul{
-        padding-left: 0px;
         margin: auto;
         margin-bottom: 15px;
     }

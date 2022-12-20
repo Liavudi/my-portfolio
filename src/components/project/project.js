@@ -100,7 +100,16 @@ function Project({ project, projectKey }) {
               </li>
             );
           })}
+          
+
         </ul>
+        
+        {project.github.map((data, key)=>{
+          
+            return <a className='githubLink' key={key} href={data.link}>{data.name}</a>
+            
+  
+          })}
       </div>
     </motion.div>
   ) : (
