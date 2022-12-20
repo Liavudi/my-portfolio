@@ -9,6 +9,9 @@
     flex-direction: column;
     align-items:center;
     position: relative;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    overflow-y:hidden;
+    
 }
 
 .projects-title{
