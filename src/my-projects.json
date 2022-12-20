@@ -1,0 +1,104 @@
+[   
+  
+    {
+      "name": "Todo List",
+      "title": "Todo List Application with a full user management system",
+      "subtitle":
+        "Implemented a todolist application with a full user-management system allowing all CRUD action",
+      "code": [
+        "RESTful API",
+        "Front-end in Angular",
+        "Backend in Flask",
+        "MongoDB",
+        "Authentication layer using cookies and sessions",
+        "Authorization layer",
+        "Used best practices e.g. error handling",
+        "Passwords encryption etc..."
+      ],
+      "desc": [
+        "The site is used to manage the todo list of the users in Database",
+        "Create User - directs the user to the registeration page, and lets the user create his account into the Database account",
+        "Login - directs the user to the login page, with the right information the user can log to access the website's functionalities",
+        "Pressing the Userlist shows all the registered users and their non confidential information from the Database",
+        "Only authorized users (admins) can access the Userlist and change each user details of the Database",
+        "In the Userlist authorized users can delete/change user information or give them authorization",
+        "Todo List - once the user is logged, he can see the Todo List button and access his Todo List",
+        "In the Todo List the user can delete/create his todos from the Database"
+      ],
+      "youtubeId": "Yh3A2kW91ZY"
+    },
+    {
+      "name": "Tank and Rocks",
+      "title": "Tank and Rocks Game",
+      "subtitle":
+        "Created a game with hand-tracking mechanism that enables playing using hands only",
+      "code":[
+        "Python Programming Language",
+      "Used various python packages such as OpenCV, Pygame and MediaPipe",
+      "Object Oriented Programming",
+      "Added animations and soundtracks effects"
+      ],
+      "desc": [
+        "The goal of the game is to get to the highest score possible",
+        "In the first screen you can see the highest and last scores, once you click any key you move to the game screen",
+        "In the game you have rocks that are falling from the skies and you need to dodge/shoot in order to stay alive/score",
+        "You have a tank that you are controling by using your hand only with your computer's camera",
+        "You can fire only 3 bullets at a time, once they explode or get out of screen you can shoot again",
+        "You start with 100 health and if the tank is damaged by the rocks you lose health",
+        "There are hearts falling from the sky randomly, by catching them you receive 25 more health if you are less than full health",
+        "Once you reach 0 health, you move to the game over screen where you can see your score",
+        "Higher score means more and faster rocks, when you reach high score the soundtrack of the game changing"
+      ],
+      "youtubeId": "rrDs_OAmwS0"
+    },
+    {
+      "name": "Memory Game",
+      "title": "Memory Game",
+      "code": [
+        "Front-end in ReactNative using Expo",
+        "Added animations",
+        "Soundtracks effects"
+      ],
+      "subtitle":
+        "Created a memory game that you need to memorize the order of the numbers and then press on them in the right order",
+      "desc": [
+        "The goal of the game is to get to the highest level possible and enhance your memorizing skill",
+        "In the first screen you can see an explanation how to play the game and pressing anywhere directs you to the Game",
+        "In the Game you have a soundtrack and white glowing circles with numbers on them",
+        "Once 2.5 seconds pass, the numbers on the circles disappear and you can press on the circles",
+        "You have a starting level and if you press all the circles correctly, you advance to the next one",
+        "The more you advance the more circles you get to memorize",
+        "The position of the circles are calculated randomly each and each game/level",
+        "Memorize the order of the numbers and when the time pass, press on them in the right order",
+        "Right press = success sound, wrong press = failure sound and losing one heart",
+        "You have 3 hearts in a game, losing all directs you to the first screen and resets the game components"
+      ],
+      "youtubeId": "sZw79fWZRF0"
+    },
+    {
+      "name": "Uber Eats",
+      "title": "Uber Eats Application",
+      "subtitle":
+        "Created an uber eats application that gives you the option to place orders to the database",
+      "code": [
+        "Front-end in ReactNative",
+        "Firebase Database",
+        "Redux",
+        "Working with webservices",
+        "Added animations"
+      ],
+      "desc": [
+        "The app is used to place food orders in Database",
+        "The main page shows all the restaurants and search delivery or pickup options",
+        "You can search for restaurants in a specific location using Google Locations Api",
+        "Once pressing on a location, you receive the restaurants from Yelp Business Api",
+        "Pressing on a restaurant directs you to the restaurant's information page",
+        "In the restaurant's information page, you can select meals and add them to the cart",
+        "Once selected at least one item, a View Cart button pops up and you can press it to check your cart",
+        "Pressing the View Cart button showing you the selected meals total price and Checkout button",
+        "Pressing the Checkout button enables loading animation and posts the order into the Firebase Database",
+        "Once finished loading, you are directed to the Order page, there you can see your order and cool food animations"
+      ],
+      "youtubeId": "hLNS2IUB4UI"
+    }
+  ]

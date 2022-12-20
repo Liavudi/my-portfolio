@@ -1,0 +1,81 @@
+.about-me-container{
+    position:relative;
+    width: 100%;
+    background-color: #010c1a;
+    height: 500px;
+    color:white;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    /* min-width: 600px; */
+}
+.title-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+}
+
+
+.profile-picture{
+    border-radius: 150px;
+    width:300px;
+    box-shadow: 0px 0px 10px 1px;
+   
+}
+
+.about-me{
+    font-size: 18px;
+    text-align: center;
+    width: 700px;
+    line-height: 1.7;
+}
+
+
+.resume-dl{
+    text-decoration: none;
+    color:white;
+    background-color: #0c0d1300;
+    height: 30px;
+    width: 125px;
+    color: white;
+    border-radius: 15px;
+    border: solid white;
+    border-width: 2px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+.resume-dl:hover{
+    cursor: pointer;
+    color: #000000;
+    background-color: white;
+    box-shadow: 2px 1px 10px 5px;
+    transition: color .10s ease-in-out, background-color .25s ease-in-out, box-shadow .25s ease-in-out;
+}
+
+@media only screen and (max-width: 600px) { 
+    .about-me-container{
+        flex-direction: column;
+        height: 520px;
+        
+    }
+    .title-container{
+        font-size: 20px;
+    }
+    .about-me{
+        width: 90%;
+        font-size: 14px;
+    }
+    .profile-picture{
+        width: 200px;
+    }
+    .resume-dl{
+        font-size: 14px;
+        width: 105px;
+    }
+
+}
