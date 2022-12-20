@@ -60,9 +60,9 @@ function Project({ project, projectKey }) {
 
   const animationOptions = () => {
     if (window.innerWidth <= 360) {
-      return { x: 500 };
+      return { x: 50 };
     }
-    return { x: 1500 };
+    return { x: 2000 };
   };
 
   return project ? (
@@ -72,7 +72,7 @@ function Project({ project, projectKey }) {
       initial={animationOptions()}
       animate={{ x: 0 }}
       exit={animationOptions()}
-      transition={{ duration: 1 }}
+      transition={{ duration: 0.7 }}
     >
       <div className="project-info">
         <div>
