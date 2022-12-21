@@ -7,10 +7,11 @@
     width: 100vw;
     z-index: 1000;
     transition: all 1s;
+    font-family: "Oswald", sans-serif;
 }
 
 .nav-btns{
-    width: 85px;
+    width: 170px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -26,6 +27,43 @@
 .link:hover{
     transform: scale(1.2);
 }
+
+#liav-wrapper {
+    display: grid;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: transparent;
+  }
+  
+  #liav-wrapper > div {
+    grid-area: 1/1/-1/-1;
+  }
+  #liav-top {
+      background-image: linear-gradient(to left, rgb(43, 70, 226), rgb(143, 6, 255),white);
+    animation: textDecoration 5000ms ease-in-out 0s infinite alternate-reverse ;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 48%, 0% 58%);
+    transform: translateY(-0.05em);
+  }
+  #liav-bottom {
+    background-image: linear-gradient(to left, rgb(43, 70, 226), rgb(143, 6, 255),white);
+    clip-path: polygon(0% 60%, 100% 50%, 100% 100%, 0% 100%);
+    animation: textDecoration 4000ms linear 0s infinite alternate-reverse ;
+    background-clip: text;
+    -webkit-background-clip: text;
+    transform: translateX(-0.05em);
+  }
+  @keyframes textDecoration {
+    0%, 100% {
+        opacity: 0.1;
+      }
+      50% {
+        opacity: 1;
+      }
+  }
+  
 
 @media only screen and (max-width: 600px) { 
     .navbar-container{

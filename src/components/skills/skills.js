@@ -20,7 +20,7 @@ const Skills = forwardRef((props,ref) => {
       return (
         <div className="skills-container" ref={ref}>
             <div className='skills-title-container'>
-          <h1 className="skills-title" >My Skills</h1> 
+          <h1 className="skills-title" >{"<Skills />"}</h1> 
           <p className='skills-subtitle'>Click to reveal</p>
 
             </div>

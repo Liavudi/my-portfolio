@@ -18,7 +18,7 @@ export default function Projects({ setBackgroundColor }) {
       exit={{ opacity: 0 }}
       transition={{ duration: 1 }}
     >
-      <div className="projects-title">My Projects</div>
+      <div className="projects-title">{"<Projects />"}</div>
       <StackedProjects skillsRef={skillsRef} />
       <Skills ref={skillsRef} />
     </motion.div>

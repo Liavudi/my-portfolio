@@ -1,10 +1,11 @@
+import { forwardRef } from "react";
 import "./footer.css";
 import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
-function Footer() {
+const Footer = forwardRef((props,ref) => {
   return (
-    <div className="footer-container">
+    <div ref={ref} className="footer-container">
       <div className="footer">
         <h1 className="footer-title">
           Thank you very much for viewing my work!
@@ -41,6 +42,8 @@ function Footer() {
       </div>
     </div>
   );
-}
+}) 
+ 
+
 
 export default Footer;
